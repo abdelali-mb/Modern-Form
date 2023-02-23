@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right ,#fbbba1 , #ccd3db)
+}
+header {
+    height: 70px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+header h2 {
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-top: 12px;
+    padding: 5px;
+}
+.main-form {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-form h1{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    margin-top: 8rem;
+    font-weight: 700;
+}
+
+.main-form .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 700px;
+    box-shadow: 0px 2px 10px #DDD;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.main-form .container .form-items {
+    display: flex;
+    flex-direction: column;
+}
+.main-form .container .form-items > * {
+    padding: 30px;
+}
+.main-form .container .form-items p {
+    max-width: fit-content;
+    font-size: 25px;
+    font-weight: normal;
+}
+.main-form .container .form-items h4 {
+    font-weight: normal;
+    font-size: 23px;
+}
+.form-items form  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}   
+.form-items form > *{
+    margin: 0.7rem 0;
+}
+.form-items form input[type=text],
+.form-items form input[type=email],
+textarea
+{
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+}
+.form-items form .check span {
+    color: blueviolet;
+    cursor: pointer;
+}
+.form-items form button {
+    width: 100%;
+    color: #fff !important;
+    background-color: #d8470e !important;
+    font-size: 20px;
+    font-weight: normal;
+    border: none;
+    padding: 18px;
+    cursor: pointer;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.form-items form button:hover {
+    color: #000 !important;
+    background-color: #72efe9 !important;
+}
+
+
+@media (max-width: 767px) {
+    .main-form .container {
+        width: 600px;
+    }
+}
+@media (max-width: 600px) {
+    .main-form .container {
+        width: 350px;
+    }
+}
+footer {
+    background-color: #333333 !important;
+    color: #fff !important;
+    height: 70px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 15px;
+}
